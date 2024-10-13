@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Enhanced styles for markdown content */
+.prose {
+  @apply text-gray-900 leading-relaxed break-words;
+}
+
+.prose p {
+  @apply mb-6;
+}
+
+.prose h1 {
+  @apply text-4xl font-bold mb-6 mt-8;
+}
+
+.prose h2 {
+  @apply text-3xl font-bold mb-5 mt-7;
+}
+
+.prose h3 {
+  @apply text-2xl font-bold mb-4 mt-6;
+}
+
+.prose ul, .prose ol {
+  @apply mb-6 pl-8;
+}
+
+.prose li {
+  @apply mb-3;
+}
+
+.prose a {
+  @apply text-blue-600 hover:underline;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-gray-300 pl-4 italic my-6;
+}
+
+.prose code {
+  @apply bg-gray-100 rounded px-1 py-0.5;
+}
+
+.prose pre {
+  @apply bg-gray-100 rounded p-4 my-6 overflow-x-auto;
+}
+
+/* Add a smooth transition for the popup */
+.fixed {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Custom scrollbar for Webkit browsers */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 8px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

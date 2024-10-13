@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Zap, TrendingUp, Shield } from 'lucide-react'
+import { ArrowRight, Zap, TrendingUp, GraduationCap, Users } from 'lucide-react'
 import AIInsights from '../components/AIInsights'
 
 const Home: React.FC = () => {
@@ -9,10 +9,10 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">AI Solutions for Small Businesses</h1>
-              <p className="text-xl mb-8">Unlock the power of AI to drive growth and efficiency in your business</p>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">AI-Driven Education for All</h1>
+              <p className="text-xl mb-8">Empowering learners through personalized AI solutions and advocacy</p>
               <a href="/contact" className="bg-white text-blue-600 py-3 px-6 rounded-full font-semibold hover:bg-blue-100 transition duration-300 inline-flex items-center">
-                Get Started
+                Join Our Mission
                 <ArrowRight className="ml-2" size={20} />
               </a>
             </div>
@@ -25,22 +25,22 @@ const Home: React.FC = () => {
 
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Our Services</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Our Initiatives</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <Zap className="text-blue-600 mb-4" size={40} />
-              <h3 className="text-xl font-semibold mb-2">AI Strategy Consulting</h3>
-              <p className="text-gray-600">Develop a tailored AI roadmap for your business</p>
+              <h3 className="text-xl font-semibold mb-2">AI in Education</h3>
+              <p className="text-gray-600">Revolutionizing learning with personalized AI-driven experiences</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <TrendingUp className="text-blue-600 mb-4" size={40} />
-              <h3 className="text-xl font-semibold mb-2">Predictive Analytics</h3>
-              <p className="text-gray-600">Leverage data to forecast trends and make informed decisions</p>
+              <h3 className="text-xl font-semibold mb-2">GI Bill Reform</h3>
+              <p className="text-gray-600">Advocating for expanded educational benefits for military families</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <Shield className="text-blue-600 mb-4" size={40} />
-              <h3 className="text-xl font-semibold mb-2">AI-Powered Security</h3>
-              <p className="text-gray-600">Enhance your cybersecurity with AI-driven threat detection</p>
+              <GraduationCap className="text-blue-600 mb-4" size={40} />
+              <h3 className="text-xl font-semibold mb-2">ProfusionAI Education</h3>
+              <p className="text-gray-600">Documenting and supporting the journey to personalized learning</p>
             </div>
           </div>
         </div>
@@ -51,22 +51,33 @@ const Home: React.FC = () => {
           <h2 className="text-3xl font-bold mb-8 text-center">Why Choose Profusion AI?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-2">Expertise in Leading Platforms</h3>
-              <p className="text-gray-600">We specialize in AWS, Azure, GCP, and Snowflake, ensuring you get the best solutions for your needs.</p>
+              <h3 className="text-xl font-semibold mb-2">Personalized Learning</h3>
+              <p className="text-gray-600">We're committed to creating tailored educational experiences that cater to each learner's unique needs and abilities.</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">Tailored for Small Businesses</h3>
-              <p className="text-gray-600">Our solutions are designed to scale with your business, providing enterprise-level AI at SMB-friendly prices.</p>
+              <h3 className="text-xl font-semibold mb-2">Advocacy for Inclusive Education</h3>
+              <p className="text-gray-600">We're pushing for reforms that will make quality education accessible to all, including children of military families and those with special needs.</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">Proven Track Record</h3>
-              <p className="text-gray-600">We've helped numerous small businesses achieve significant growth and efficiency gains through AI adoption.</p>
+              <h3 className="text-xl font-semibold mb-2">AI-Driven Innovation</h3>
+              <p className="text-gray-600">Our solutions leverage cutting-edge AI technology to create more effective and engaging learning environments.</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">Ongoing Support</h3>
-              <p className="text-gray-600">Our team provides continuous support and training to ensure you get the most out of your AI investments.</p>
+              <h3 className="text-xl font-semibold mb-2">Community-Focused Approach</h3>
+              <p className="text-gray-600">We're building a supportive community of educators, parents, and technologists dedicated to transforming education.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-8">Join Our Mission</h2>
+          <p className="text-xl mb-8">Help us create a future where every learner has access to personalized, AI-enhanced education.</p>
+          <a href="/contact" className="bg-blue-600 text-white py-3 px-6 rounded-full font-semibold hover:bg-blue-700 transition duration-300 inline-flex items-center">
+            Get Involved
+            <Users className="ml-2" size={20} />
+          </a>
         </div>
       </section>
     </div>
